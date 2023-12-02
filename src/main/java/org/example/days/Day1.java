@@ -1,18 +1,18 @@
-package org.example;
+package org.example.days;
 
-import java.io.*;
+import org.example.Main;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-
-    public static void main( String[] args ) throws IOException, URISyntaxException {
-        day1_part1();
-        day1_part2();
-    }
-    private static File getFile( String filename ) throws URISyntaxException {
+public class Day1 {
+    private static File getFile(String filename ) throws URISyntaxException {
         URL resource = Main.class.getClassLoader().getResource( filename );
         File file = null;
         if ( resource == null ) {
@@ -49,7 +49,7 @@ public class Main {
             numbersToAdd.add( Integer.valueOf( String.valueOf( numbersInString.get( 0 ).toString() + numbersInString.get( length - 1 ).toString() ) ) );
         }
     }
-    private static void day1_part1() throws URISyntaxException, IOException {
+    public static void day1_part1() throws URISyntaxException, IOException {
         var file = getFile( "input_day1.txt" );
         BufferedReader br = new BufferedReader( new FileReader( file ) );
         String st;
@@ -71,9 +71,9 @@ public class Main {
         for( int number : numbersToAdd ) {
             result += number;
         }
-        System.out.println( "part 1: " + result );
+        System.out.println( "day 1 part 1: " + result );
     }
-    private static void day1_part2() throws URISyntaxException, IOException {
+    public static void day1_part2() throws URISyntaxException, IOException {
         var file = getFile( "input_day1.txt" );
         BufferedReader br = new BufferedReader( new FileReader( file ) );
         String st;
@@ -129,6 +129,6 @@ public class Main {
         for( int number : numbersToAdd ) {
             result += number;
         }
-        System.out.println("part 2: " + result );
+        System.out.println("day 1 part 2: " + result );
     }
 }
