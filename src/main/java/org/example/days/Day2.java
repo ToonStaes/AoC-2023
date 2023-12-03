@@ -1,4 +1,4 @@
-package org.example.days;
+package main.java.org.example.days;
 
 import java.io.BufferedReader;
 import java.io.File;

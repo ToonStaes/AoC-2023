@@ -1,6 +1,7 @@
-package org.example.days;
+package main.java.org.example.days;
 
-import org.example.Main;
+
+import main.java.org.example.Main;
 
 import java.io.BufferedReader;
 import java.io.File;
