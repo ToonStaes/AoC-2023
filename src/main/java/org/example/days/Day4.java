@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class Day4 {
 
     public static void day4_part2() throws IOException {
         List<String> originalLines = Files.readAllLines(Paths.get("src\\main\\resources\\input_day4.txt"));
-        List<String> extraLines = Files.readAllLines(Paths.get("src\\main\\resources\\input_day4.txt"));
+        List<String> extraLines = new ArrayList<>(originalLines);
 
         for (int lineIndex = 0; lineIndex < extraLines.size(); lineIndex++) {
             String currentLine = extraLines.get(lineIndex);
