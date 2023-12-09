@@ -10,6 +10,9 @@ import static main.java.org.example.days.Day4.*;
 import static main.java.org.example.days.Day5.*;
 import static main.java.org.example.days.Day6.*;
 import static main.java.org.example.days.Day7.*;
+import static main.java.org.example.days.Day8_part1.*;
+import static main.java.org.example.days.Day8_part2.*;
+import static main.java.org.example.days.Day9.*;
 
 public class Main {
 
@@ -28,6 +31,11 @@ public class Main {
 //        day6_part1();
 //        day6_part2();
 //        day7_part1();
-        day7_part2();
+//        day7_part2();
+//        day8_part1();
+//        day8_part2();
+//        day9_part1();
+        day9_part2();
+
     }
 }
